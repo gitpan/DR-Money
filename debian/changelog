@@ -1,0 +1,5 @@
+libdr-money-perl (0.01) nowtaxi; urgency=low
+
+  * Initial Release.
+
+ -- Dmitry E. Oboukhov <unera@debian.org>  Thu, 21 Mar 2013 19:54:04 +0400
