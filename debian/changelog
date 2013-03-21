@@ -1,3 +1,9 @@
+libdr-money-perl (0.02) nowtaxi; urgency=low
+
+  * Croaks if parses wrong money value.
+
+ -- Dmitry E. Oboukhov <unera@debian.org>  Thu, 21 Mar 2013 20:05:52 +0400
+
 libdr-money-perl (0.01) nowtaxi; urgency=low
 
   * Initial Release.

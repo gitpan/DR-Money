@@ -10,7 +10,7 @@ our %EXPORT_TAGS = ( 'all' => [ qw(Money) ] );
 our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 our @EXPORT = qw(Money);
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use overload
     '""'        => \&value,
@@ -144,6 +144,8 @@ sub _assign {
         $k = int $k;
         $sign = '+' unless $r or $k;
         $s = sprintf '%s%d.%02d', ($sign eq '-' ? '-' : ''), $r, $k;
+    } else {
+        croak "wrong money value: $value";
     }
 
     @$self = ($sign, $r, $k, $s);
